@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visi dan Misi - PT Narwastu Persada Nusantara</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Roboto', 'Lato', sans-serif;
+      position: relative;
+      z-index: 0;
+      color: #2E2E2E;
+    }
+
+    /* Tambahan background dengan overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.85)),
+        url('foto/background.jpg') no-repeat center center / cover;
+      z-index: -1;
+      opacity: 0.6;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .scroll-fade {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .scroll-fade.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    .typing-effect {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid white;
+      width: 0;
+      animation: typing 3s steps(30, end) forwards;
+    }
+  </style>
+</head>
+<body class="bg-white text-[#2E2E2E]">
+  <header class="bg-gradient-to-r from-[#1C2D5A] to-[#2F3E73] text-white py-6 text-center shadow-md">
+    <h1 class="text-3xl font-bold tracking-wide animate-pulse">Visi Misi</h1>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-16 space-y-12 text-justify">
+    <section class="scroll-fade">
+      <h2 class="text-2xl font-semibold mb-4 text-[#1C2D5A]">Visi</h2>
+      <ul class="space-y-4 text-lg leading-relaxed">
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-[#1C2D5A] mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Terwujudnya manusia yang mandiri dan sejahtera melalui peningkatan mutu sumber daya manusia dan sumber daya alam.
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-[#1C2D5A] mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Mewujudkan SDM khususnya generasi muda yang memiliki ketrampilan memadai didukung sikap mental positif, kreativitas, kemandirian, serta patriotisme tinggi demi kemajuan Indonesia.
+        </li>
+      </ul>
+    </section>
+
+    <section class="scroll-fade">
+      <h2 class="text-2xl font-semibold mb-4 text-[#1C2D5A]">Misi</h2>
+      <ul class="space-y-4 text-lg leading-relaxed">
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Meningkatkan Kualitas Pelayanan Dalam Masyarakat.
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Mengoptimalkan seluruh tatanan kehidupan masyarakat dari segala segi kehidupan serta meningkatkan kerjasama dengan lembaga masyarakat, agama, dan pendidikan.
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Meningkatkan ketersediaan Sumber Daya Manusia.
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Membangun relasi dengan lembaga pendidikan formal & non formal untuk membentuk generasi yang bermoral dan mandiri.
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Menjalin kerjasama dengan semua pihak untuk mewujudkan keamanan dan ketertiban di masyarakat.
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Mengoptimalkan SDM & SDA untuk berkontribusi pada Pendapatan Asli Negara.
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Meningkatkan Perekonomian Masyarakat melalui Pendidikan dan Pelatihan Kerja.
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Mengembangkan potensi generasi muda dan menyiapkan support system penguat program kerja.
+        </li>
+        <li class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Mensosialisasikan pendidikan & pelatihan, serta memberi solusi untuk ikut program pemberdayaan SDM.
+        </li>
+      </ul>
+    </section>
+
+    <div class="text-center mt-10 scroll-fade">
+      <a href="#" onclick="kembaliKeBeranda()" class="inline-block bg-[#1C2D5A] text-white px-6 py-3 rounded-xl shadow-md hover:bg-[#132047] hover:scale-105 transition duration-300 ease-in-out">← Kembali ke Beranda</a>
+    </div>
+  </main>
+
+  <footer class="bg-gradient-to-r from-[#1C2D5A] to-[#3A4B91] text-white py-8 text-center shadow-inner scroll-fade">
+    <p class="mb-1">Alamat: Jl. Mandurorejo No. 345 RT. 07 RW. 03 Desa Nyamok, Kec. Kajen, Kab. Pekalongan 51161</p>
+    <p class="mb-1">WhatsApp: 0877 – 4131 – 0793</p>
+    <p class="mb-1">Email: nusantaranarwastupersada@gmail.com</p>
+    <p class="mt-4">&copy; 2025 PT Narwastu Persada Nusantara. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function kembaliKeBeranda() {
+      window.open('index.html', '_self');
+      window.close();
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.scroll-fade').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

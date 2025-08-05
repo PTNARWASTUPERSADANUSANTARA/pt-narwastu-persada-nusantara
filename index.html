@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PT Narwastu Persada Nusantara</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Roboto', 'Lato', sans-serif;
+      position: relative;
+      z-index: 0;
+      color: #2E2E2E;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.85)),
+        url('foto/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      z-index: -1;
+      opacity: 0.9;
+    }
+
+    a.btn-merah {
+      background-color: #BC002D;
+      box-shadow: 0 4px 14px rgba(188, 0, 45, 0.4);
+      transition: 0.3s ease-in-out;
+      border-radius: 0.5rem;
+    }
+
+    a.btn-merah:hover {
+      background-color: #a80026;
+      transform: scale(1.05);
+    }
+
+    .brand-font {
+      font-family: 'Playfair Display', serif;
+    }
+
+    #menuListMobile {
+      transform-origin: top;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="bg-[#1C2D5A] text-white px-6 py-4 fixed top-0 left-0 w-full z-50 shadow-lg">
+    <div class="flex justify-between items-center">
+      <div class="text-2xl md:text-3xl font-bold brand-font">PT Narwastu Persada Nusantara</div>
+      <button id="toggleMenu" class="md:hidden focus:outline-none bg-white/20 hover:bg-white/30 p-2 rounded-full shadow-md transition duration-300">
+        <svg id="menuIcon" class="w-7 h-7 fill-current text-white transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <ul id="menuList" class="hidden md:flex md:space-x-4 items-center">
+        <li><a href="index.html" class="btn-merah text-white px-4 py-2 block">Beranda</a></li>
+        <li><a href="profil.html" target="_blank" class="btn-merah text-white px-4 py-2 block">Profil</a></li>
+        <li><a href="visi-misi.html" target="_blank" class="btn-merah text-white px-4 py-2 block">Visi Misi</a></li>
+        <li><a href="layanan.html" target="_blank" class="btn-merah text-white px-4 py-2 block">Bidang Usaha</a></li>
+        <li><a href="pendaftaran.html" target="_blank" class="btn-merah text-white px-4 py-2 block">Daftar</a></li>
+      </ul>
+    </div>
+
+    <ul id="menuListMobile" class="transition-all duration-500 ease-in-out transform scale-95 opacity-0 mt-4 space-y-2 md:hidden hidden">
+      <li><a href="index.html" class="btn-merah text-white px-4 py-2 block text-center">Beranda</a></li>
+      <li><a href="profil.html" target="_blank" class="btn-merah text-white px-4 py-2 block text-center">Profil</a></li>
+      <li><a href="visi-misi.html" target="_blank" class="btn-merah text-white px-4 py-2 block text-center">Visi Misi</a></li>
+      <li><a href="layanan.html" target="_blank" class="btn-merah text-white px-4 py-2 block text-center">Bidang Usaha</a></li>
+      <li><a href="pendaftaran.html" target="_blank" class="btn-merah text-white px-4 py-2 block text-center">Daftar</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <main class="flex flex-col items-center justify-center max-w-6xl mx-auto px-4 pt-36 pb-20 gap-8">
+    <div class="w-full flex justify-center">
+      <img src="foto/jepang.jpg" alt="Ilustrasi Jepang" class="w-full max-w-4xl rounded-lg shadow-2xl transition-transform hover:scale-105">
+    </div>
+    <div class="text-center max-w-2xl">
+      <h2 class="text-4xl font-bold mb-4 text-[#1C2D5A]">Membangun Karakter Generasi Bangsa</h2>
+      <p class="mb-6 text-lg">Kami hadir untuk membentuk SDM unggul melalui pelatihan kerja dan pemagangan ke Jepang.</p>
+      <a href="pendaftaran.html" target="_blank" class="btn-merah text-white px-6 py-3 rounded-md inline-block">Daftar Sekarang</a>
+    </div>
+  </main>
+
+  <!-- Pembelajaran -->
+  <section class="max-w-6xl mx-auto py-20">
+    <h3 class="text-3xl font-bold text-center mb-6 text-[#1C2D5A]">Kegiatan Pembelajaran Kami</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+        <img src="photo/pelajar 1.jpg" alt="Pelajar 1" class="w-full">
+      </div>
+      <div class="rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+        <img src="photo/pelajar 2.jpg" alt="Pelajar 2" class="w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#1C2D5A] text-white py-6 text-center">
+    <p>Alamat: Jl. Mandurorejo No. 345 RT. 07 RW. 03 Desa Nyamok, Kec. Kajen, Kab. Pekalongan 51161</p>
+    <p>WhatsApp: 0877 – 4131 – 0793</p>
+    <p>Email: nusantaranarwastupersada@gmail.com</p>
+    <p>&copy; 2025 PT Narwastu Persada Nusantara. All rights reserved.</p>
+  </footer>
+
+  <!-- Script Toggle Menu -->
+  <script>
+    const toggleBtn = document.getElementById('toggleMenu');
+    const menuMobile = document.getElementById('menuListMobile');
+    const menuIcon = document.getElementById('menuIcon');
+    let menuOpen = false;
+
+    toggleBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+
+      if (menuOpen) {
+        menuMobile.classList.remove('hidden');
+        setTimeout(() => {
+          menuMobile.classList.remove('opacity-0', 'scale-95');
+          menuMobile.classList.add('opacity-100', 'scale-100');
+        }, 10);
+        // Ganti ikon jadi X
+        menuIcon.innerHTML = '<path d="M6 6L18 18M6 18L18 6"/>';
+      } else {
+        menuMobile.classList.add('opacity-0', 'scale-95');
+        menuMobile.classList.remove('opacity-100', 'scale-100');
+        setTimeout(() => {
+          menuMobile.classList.add('hidden');
+        }, 300);
+        // Kembali ke ikon strip 3
+        menuIcon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16" />';
+      }
+    });
+  </script>
+
+</body>
+</html>
